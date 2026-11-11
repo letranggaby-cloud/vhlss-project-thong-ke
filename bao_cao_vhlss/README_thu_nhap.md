@@ -18,9 +18,9 @@ CPI bình quân: 2010 = 100; 2014 = 143,69. [Nguồn và cách quy đổi](CPI_n
 
 Hai năm là hai mẫu hộ độc lập; mỗi hộ có trọng số bằng nhau. Mean là trung bình thu nhập đầu người của các hộ. Giữ nhãn Q gốc; `area`: 1 = thành thị, 2 = nông thôn. Bản lọc bỏ đúng 10 hộ cao nhất trong toàn năm, trước khi chia theo Q/khu vực; không chia lại Q.
 
-**Các bước:** đọc Excel → quy giá 2010 → xem phân phối Q4 → tạo hai bản mẫu → kiểm tra phân phối → kiểm định và CI 95% → đối chiếu.
+**Các bước:** đọc Excel → quy giá 2010 → xem phân phối Q4 → tạo hai bản mẫu → kiểm định và CI 95% → đối chiếu.
 
-Với từng phạm vi, đặt $\Delta=\mu_{2014}-\mu_{2010}$; **H₀: Δ=0; H₁: Δ>0**. Dùng **t-test hai mẫu độc lập, phương sai chưa biết và không giả sử bằng nhau, phía phải — Chap 7 §7.2.4, trang 14**. CI 95% hai phía của chênh lệch mean dùng cùng SE và bậc tự do trong slide. Kiểm tra Jarque–Bera theo **Chap 9 §9.4, trang 21**.
+Với từng phạm vi, đặt $\Delta=\mu_{2014}-\mu_{2010}$; **H₀: Δ=0; H₁: Δ>0**. Dùng **t-test hai mẫu độc lập, phương sai chưa biết và không giả sử bằng nhau, phía phải — Chap 7 §7.2.4, trang 14**. CI 95% hai phía của chênh lệch mean dùng cùng SE và bậc tự do trong slide.
 
 ## Phân phối Q4 trước khi lọc
 
@@ -44,13 +44,13 @@ Top 0,1% đóng góp **89,3% SS của Q4 năm 2010** và **53,6% năm 2014**. Đ
 
 Theo từng kiểm định xấp xỉ ở mức 5%, cả hai bản đều bác bỏ H₀ ở toàn mẫu, từng Q và từng khu vực: có bằng chứng thu nhập thực bình quân tăng. Toàn mẫu tăng **14,26%**; bản bỏ top 0,1% tăng **16,73%**. Q1–Q3 không thay đổi giữa hai bản; mọi hộ bị loại đều thuộc Q4 gốc.
 
-Tất cả 28 mẫu kiểm tra đều bác bỏ chuẩn theo JB. P/CI là xấp xỉ cho mean; bản toàn mẫu 2010 bị ảnh hưởng mạnh bởi đuôi trên, nhất là Q4 và nông thôn. Bản lọc coi ngưỡng và nhãn Q như đã cho. Các p/CI áp dụng riêng lẻ; chưa xét trọng số/tầng/cụm khảo sát hoặc giá vùng. Kết quả không có nghĩa mọi hộ đều tăng thu nhập.
+P/CI là xấp xỉ cho mean; bản toàn mẫu 2010 bị ảnh hưởng mạnh bởi đuôi trên, nhất là Q4 và nông thôn. Bản lọc coi ngưỡng và nhãn Q như đã cho. Các p/CI áp dụng riêng lẻ; chưa xét trọng số/tầng/cụm khảo sát hoặc giá vùng. Kết quả không có nghĩa mọi hộ đều tăng thu nhập.
 
 ## File và cách chạy
 
 - [Notebook](thu_nhap_2010_2014.ipynb).
 - [14 kết quả kiểm định, SE, t, df, p và CI](thu_nhap_ket_qua.csv).
-- [Số hộ của hai bản](thu_nhap_so_mau.csv), [kiểm tra phân phối](thu_nhap_phan_phoi.csv), [20 hộ bị loại](thu_nhap_top_0_1.csv).
+- [Số hộ của hai bản](thu_nhap_so_mau.csv), [20 hộ bị loại](thu_nhap_top_0_1.csv).
 - [Excel gốc](../dataset/VHLSS_2014.xls), [CPI](cpi_2010_2014.csv).
 
 Từ thư mục gốc repo, cài `python -m pip install -r bao_cao_vhlss/requirements_thu_nhap.txt`. Mở notebook trong Jupyter hoặc VS Code, chọn môi trường Python rồi Run All. Giữ nguyên cấu trúc thư mục để đọc Excel và CPI. Kết quả đã lưu có thể xem trực tiếp trên GitHub.
