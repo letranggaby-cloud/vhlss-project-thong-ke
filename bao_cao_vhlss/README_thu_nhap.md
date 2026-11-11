@@ -46,6 +46,14 @@ Theo từng kiểm định xấp xỉ ở mức 5%, cả hai bản đều bác b
 
 P/CI là xấp xỉ cho mean; bản toàn mẫu 2010 bị ảnh hưởng mạnh bởi đuôi trên, nhất là Q4 và nông thôn. Bản lọc coi ngưỡng và nhãn Q như đã cho. Các p/CI áp dụng riêng lẻ; chưa xét trọng số/tầng/cụm khảo sát hoặc giá vùng. Kết quả không có nghĩa mọi hộ đều tăng thu nhập.
 
+## Nhận xét về thu nhập và mức sống
+
+- Thu nhập thực bình quân tăng **14,26% / 16,73%** ở hai bản. Sau điều chỉnh CPI, hộ bình quân có thêm nguồn lực trên mỗi thành viên.
+- Q1 tăng **1,035 triệu/người/năm**, tương đương khoảng **86 nghìn đồng/người/tháng theo giá 2010**. Cải thiện thu nhập xuất hiện cả ở nhóm có ít nguồn lực nhất.
+- Q2–Q3 cũng tăng; Q4 có CI rộng hơn khi giữ toàn mẫu do ảnh hưởng đuôi trên. Giữ hay bỏ top 0,1% đều cho cùng chiều tăng ở từng nhóm.
+- Thành thị và nông thôn đều tăng. Nông thôn có tỷ lệ tăng cao hơn trong mẫu, nhưng mean năm 2014 vẫn thấp hơn thành thị; chưa có kiểm định chênh lệch tốc độ tăng giữa hai khu vực.
+- Các kết quả hỗ trợ kết luận **nguồn lực thu nhập bình quân cải thiện**. Khả năng trang trải, nợ và tích lũy cần được xem thêm trước khi đánh giá mức sống tài chính đầy đủ hơn. Hai năm không theo dõi cùng hộ.
+
 ## File và cách chạy
 
 - [Notebook](thu_nhap_2010_2014.ipynb).
