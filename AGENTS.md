@@ -24,3 +24,6 @@
 - Không khôi phục các thư mục báo cáo/bảng cũ vào main; dùng lịch sử Git nếu cần đối chiếu. Run All và kiểm tra dữ liệu trước commit/push.
 
 - Khi chuẩn bị bản nộp: viết ghi chú ngắn, cụ thể; xử lý dữ liệu theo từng cell thay vì gom một hàm dài. Giữ công thức/điều kiện cần để giải thích cách làm, tránh lặp hướng dẫn và đoạn sinh văn bản kết luận không cần thiết.
+
+- Đề mục phân tích: A. Thu Nhập; B. Chi Tiêu; C. Thu - Chi; D. Tài Sản. Hiện B/C chỉ đặt khung. D ghép từ Colab `1mtAVFZxFl1JkVguy4Sq_5tLt_FAegXmE`, dùng processed và hàm chung, không ghi đè `data` bằng dict năm hoặc tạo bảng/ảnh rời.
+- Tài sản: tổng 9 đồ bền không nhà chỉ tính khi đủ 9; số nhóm thiết bị công nghệ chỉ tính khi đủ 4 trạng thái. Giá trị triệu đồng/hộ, giá 2010. Không sao chép ANOVA độc lập sau melt nhiều thiết bị cùng hộ; giữ bảng mô tả. Bootstrap skewness và p Bonferroni là phần bổ sung theo notebook nguồn; CI từng phép vẫn 95%.
