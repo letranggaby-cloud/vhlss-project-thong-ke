@@ -22,3 +22,5 @@
 - Hai mẫu năm độc lập. Paired t-test chỉ là hàm dùng lại cho dữ liệu có cặp thật. ANOVA mặc định chỉ phân rã SS, không gán p khi chưa đánh giá điều kiện; công thức hai nhân tố chỉ cho thiết kế cân bằng.
 - Thu nhập giữ toàn mẫu và bản bỏ top 0,1% từng năm, chẩn đoán theo đúng nhóm. Trình bày ngắn, tên rõ, cell thoáng; kết quả/biểu đồ nằm trong notebook, không tạo bảng rời mặc định.
 - Không khôi phục các thư mục báo cáo/bảng cũ vào main; dùng lịch sử Git nếu cần đối chiếu. Run All và kiểm tra dữ liệu trước commit/push.
+
+- Khi chuẩn bị bản nộp: viết ghi chú ngắn, cụ thể; xử lý dữ liệu theo từng cell thay vì gom một hàm dài. Giữ công thức/điều kiện cần để giải thích cách làm, tránh lặp hướng dẫn và đoạn sinh văn bản kết luận không cần thiết.
