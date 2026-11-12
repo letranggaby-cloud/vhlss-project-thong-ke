@@ -1,20 +1,13 @@
-# Chỉ đưa lên GitHub: README, 2 file dữ liệu đã chọn và thư mục presentation
+# Chỉ giữ notebook, dữ liệu processed và hướng dẫn.
 /*
 !/.gitignore
+!/AGENTS.md
 !/README.md
+!/vhlss_preprocess_va_thu_nhap.ipynb
 !/processed/
 /processed/*
-!/processed/vhlss_clean.csv
-!/processed/vhlss_merged.csv
-!/presentation/
+!/processed/vhlss_processed.csv
 
-# file tạm
+.ipynb_checkpoints/
 __pycache__/
 *.pyc
-*.log
-*.aux
-*.nav
-*.out
-*.snm
-*.toc
-*.synctex.gz
